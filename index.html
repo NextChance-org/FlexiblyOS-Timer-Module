@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>FlexiblyOS-Timer-Module</title>
+</head>
+<body>
+    <div id="focus-timer-display">フォーカスタイマー<div class="timer-display"><span id="focus-hou">0</span>:<span id="focus-min">0</span>:<span id="focus-sec">0</span></div></div>
+    <div id="interval-timer-display">インターバルタイマー<div class="timer-display"><span id="interval-hou">0</span>:<span id="interval-min">0</span>:<span id="interval-sec">0</span></div></div>
+    <button class="timer-button" id="start" disabled>スタート</button><button class="timer-button" id="stops">ストップ</button><button class="timer-button" id="reset">リセット</button>
+    <div id="addtime">
+      <!--
+      <input type="range" class="timer-range" id="focus-hou-range" min="0" max="100" value="0">
+      <input type="range" class="timer-range" id="focus-min-range" min="0" max="59" value="0">
+      <input type="range" class="timer-range" id="focus-sec-range" min="0" max="59" value="0">
+        -->
+      <button class="timer-button" id="focus-1hou">+1h</button>
+      <button class="timer-button" id="focus-10min">+10m</button>
+      <button class="timer-button" id="focus-5min">+5m</button>
+      <button class="timer-button" id="focus-1min">+1m</button>
+      <button class="timer-button" id="focus-10sec">+10s</button>
+      <button class="timer-button" id="focus-1sec">+1s</button>
+      <div></div>
+      <button class="timer-button" id="focus-1hou-" disabled>-1h</button>
+      <button class="timer-button" id="focus-10min-" disabled>-10m</button>
+      <button class="timer-button" id="focus-5min-" disabled>-5m</button>
+      <button class="timer-button" id="focus-1min-" disabled>-1m</button>
+      <button class="timer-button" id="focus-10sec-" disabled>-10s</button>
+      <button class="timer-button" id="focus-1sec-" disabled>-1s</button>
+    </div>
+    インターバルモード(ポモドーロタイマー)<button id="interval-on">ON</button><button id="interval-off" disabled>OFF</button>
+    <div id="addtime-interval">
+    <!--
+      <input type="range" class="timer-range" id="interval-hou-range" min="0" max="100" value="0">
+      <input type="range" class="timer-range" id="interval-min-range" min="0" max="59" value="0">
+      <input type="range" class="timer-range" id="interval-sec-range" min="0" max="59" value="0">
+  -->
+      <button class="timer-button" id="interval-1hou">+1h</button>
+      <button class="timer-button" id="interval-10min">+10m</button>
+      <button class="timer-button" id="interval-5min">+5m</button>
+      <button class="timer-button" id="interval-1min">+1m</button>
+      <button class="timer-button" id="interval-10sec">+10s</button>
+      <button class="timer-button" id="interval-1sec">+1s</button>
+      <div></div>
+      <button class="timer-button" id="interval-1hou-" disabled>-1h</button>
+      <button class="timer-button" id="interval-10min-" disabled>-10m</button>
+      <button class="timer-button" id="interval-5min-" disabled>-5m</button>
+      <button class="timer-button" id="interval-1min-" disabled>-1m</button>
+      <button class="timer-button" id="interval-10sec-" disabled>-10s</button>
+      <button class="timer-button" id="interval-1sec-" disabled>-1s</button>
+      <!--音を鳴らして終了を通知する<input id="notice-button" type="checkbox">
+      Todo または イベントを設定する
+      フォーカスを記録する<input id="focus-record" type="checkbox">
+      繰り返し回数(デフォルトは無限)
+      <button id="interval-1">+1</button>
+      <button id="interval-1-">-1</button>
+  -->
+    </div>
+    <div id="focusmusics">
+      <div><a href="https://open.spotify.com/"><img id="spotify" src="img/spotify.png" width="60" height="60"><div>Spotify</div></a></div>
+      <div><a href="https://music.youtube.com/"><img class="focusmusic" id="youtubemusic" src="img/youtubemusic.png" width="60" height="60"><div>YouTube<br>Music</div></a></div>
+      <div><a href="https://music.line.me/webapp/today"><img class="focusmusic" id="line-music" src="img/linemusic.png" width="60" height="60"><div>LINE<br>MUSIC</div></a></div>
+      <div><a href="https://music.apple.com/jp/new"><img class="focusmusic" id="apple-music" src="img/applemusic.png" width="60" height="60"><div>Apple<br>Music</div></a></div>
+      <div><a href="https://music.amazon.co.jp/"><img class="focusmusic" id="amazon-music" src="img/amazonmusic.png" width="60" height="60"><div>Amazon<br>Music</div></a></div>
+      <div><a href="https://soundcloud.com/"><img class="focusmusic" id="sound-cloud" src="img/soundcloud.png" width="60" height="60"><div>SoundCloud</div></a></div>
+      <div><a href="https://awa.fm/"><img class="focusmusic" id="awa" src="img/awa.png" width="60" height="60"><div>AWA</div></a></div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
